@@ -1,19 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Connect 4</title>
-  <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Connect Four</h1>
+    <div id="color-selection">
+        <label for="p1-color">Player 1 Color:</label>
+        <input type="color" id="p1-color" value="#ff0000">
+        <label for="p2-color">Player 2 Color:</label>
+        <input type="color" id="p2-color" value="#ffff00">
+        <button id="start-game">Start Game</button>
+    </div>
+    <table id="board"></table>
 
-<input id="p1-color" placeholder="Player 1 color">
-<input id="p2-color" placeholder="Player 2 color">
-<button id="start-game">Start Game!</button>
-
-<div id="game">
-  <table id="board"></table>
-</div>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
